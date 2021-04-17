@@ -5,7 +5,9 @@
     "symfony/var-dumper": "^5.2"
   },
   "autoload": {
-    "App\\": "App",
-    "phpMvc\\": "src"
+    "psr-4": {
+      "App\\": "App",
+      "phpMvc\\": "src"
+    }
   }
 }
