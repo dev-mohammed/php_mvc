@@ -14,7 +14,10 @@ class Request
     {
         $path = $_SERVER['REQUEST_URI'] ?? '/';
 
-        return str_contains($path, '?') ? explode('?', $path)[0] : $path;
+        if (strpos($path, '?')) {
+            return explode('?', $path)[0];
+        }
+        return $path;
     }
 
 }
