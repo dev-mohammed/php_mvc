@@ -1,7 +1,7 @@
 <?php
 
+
+use App\Controllers\HomeController;
 use phpMvc\Http\Route;
 
-Route::get('/', function () {
-    return 'hello';
-});
+Route::get('/', [HomeController::class , 'index']);
