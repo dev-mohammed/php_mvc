@@ -1,0 +1,11 @@
+{
+  "name": "adel/php_mvc",
+  "require": {
+    "vlucas/phpdotenv": "^5.3",
+    "symfony/var-dumper": "^5.2"
+  },
+  "autoload": {
+    "App\\": "App",
+    "phpMvc\\": "src"
+  }
+}
